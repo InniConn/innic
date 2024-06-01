@@ -8,6 +8,7 @@
 
 🌟 Revolutionizing Database Connectivity with AI-Powered Smart Experience: Innic, an AI SQL integrated database connection tool, is now officially open to users worldwide. We are committed to simplifying your database management processes and enhancing work efficiency through artificial intelligence technology.
 
+![innic](https://github.com/InniConn/innic/assets/168209124/d1f5723c-992b-4e07-9835-56db41d2c844)
 
 🔍 Core Advantages:
 - AI SQL Engine: Utilizing cutting-edge AI to optimize query performance and intelligently suggest SQL statements.
