@@ -3,8 +3,8 @@
 
 🌐 Embark on a New Era of Intelligent Database Management with Innic by Your Side! 
 📢 Innic —— Bridging the Future, Mastering Data, AI SQL Makes the Impossible Possible.
-- Official Website: innicdata.com
-- Social Media Platforms: ZhiHu、Slack、Discord
+- Official Website: [innicdata.com](https://innicdata.com/)
+- Social Media Platforms: [ZhiHu](https://www.zhihu.com/people/innicdata)、[Slack](https://join.slack.com/t/innicdata/shared_invite/zt-2i95v0wuu-iVUVhDqzRa8UFjNHx540XQ)、[Discord](https://discord.gg/YwpmBqyb)
 
 🌟 Revolutionizing Database Connectivity with AI-Powered Smart Experience: Innic, an AI SQL integrated database connection tool, is now officially open to users worldwide. We are committed to simplifying your database management processes and enhancing work efficiency through artificial intelligence technology.
 
