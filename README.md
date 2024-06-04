@@ -23,7 +23,7 @@
 - Collaboration Enhancement: Supports team collaboration, allowing seamless data sharing and access among team members.
 
 🌟 Special Promotion:
-- Limited-Time Offer: The first 2024 registered users will enjoy a free trial period of Innic, experiencing the power of AI SQL.
+- Limited-Time Offer: **The first 2,024 registered users will enjoy Innic's 7-day free probation period**, experiencing the power of AI SQL.
   - Subscription Users: Enjoy a 25% discount for the first 6 months For our valued subscription users, we offer a 6-month discount to further enhance your experience in managing databases with Innic.
   - All Other Users: 25% Off Everyone else can take advantage of a 25% discount on our services, making it easier than ever to join the Innic family.
   - Limited Quantities Available – First Come, First Served! Don't miss out on this incredible opportunity. The offer is limited, so act fast to secure your spot!
