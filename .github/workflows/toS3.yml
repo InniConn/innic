@@ -32,6 +32,6 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRETACCESSKEY }}
         AWS_S3_ENDPOINT: ${{secrets.ENDPOINT}}
-        AWS_REGION: 'us-west-1'   # optional: defaults to us-east-1
+        AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
         SOURCE_DIR: './'      # optional: defaults to entire repository
         DEST_DIR: '/client_latest'
