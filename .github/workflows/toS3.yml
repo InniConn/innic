@@ -1,0 +1,37 @@
+name: Upload Release Asset
+
+on:
+#手动触发
+  workflow_dispatch: # 手动触发
+    inputs:
+      tag:
+        required: true
+        description: 'The version x.x.x of the release'
+  release:
+    types: [published]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: robinraju/release-downloader@v1.10
+      with:
+        repository: 'Innic-Data/innic'
+        tag: ${{ github.event.inputs.tag || github.ref_name }}
+        fileName: '*'
+    - name: list files
+      run: ls -l
+
+    - name: Upload to S3
+      uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+    env:
+        AWS_S3_BUCKET: ${{ secrets.BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRETACCESSKEY }}
+        AWS_S3_ENDPOINT: ${{secrets.ENDPOINT}}
+        AWS_REGION: 'us-west-1'   # optional: defaults to us-east-1
+        SOURCE_DIR: './'      # optional: defaults to entire repository
+        DEST_DIR: '/client_latest'
