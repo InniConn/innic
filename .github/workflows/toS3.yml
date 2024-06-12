@@ -23,6 +23,14 @@ jobs:
     - name: list files
       run: ls -l
 
+    - name: Set up Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '16.x'
+    - name: Run Script
+      run: |
+        node ./scripts/replace.js
+
     - name: Upload to S3
       uses: jakejarvis/s3-sync-action@master
       with:
@@ -34,4 +42,4 @@ jobs:
         AWS_S3_ENDPOINT: ${{secrets.ENDPOINT}}
         AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
         SOURCE_DIR: './'      # optional: defaults to entire repository
-        DEST_DIR: '/client_latest'
+        DEST_DIR: 'client_latest'
