@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v4
     - uses: robinraju/release-downloader@v1.10
       with:
         repository: 'Innic-Data/innic'
@@ -22,9 +23,9 @@ jobs:
         fileName: '*'
         out-file-path: ./latest
     - name: list files
-      run: ls -l
+      run: ls ./latest -l
       
-    - uses: actions/checkout@v4
+  
     - name: Set up Node
       uses: actions/setup-node@v1
       with:
