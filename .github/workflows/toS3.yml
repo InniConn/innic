@@ -20,9 +20,11 @@ jobs:
         repository: 'Innic-Data/innic'
         tag: ${{ github.event.inputs.tag || github.ref_name }}
         fileName: '*'
+        out-file-path: latest
     - name: list files
       run: ls -l
-
+      
+    - uses: actions/checkout@v4
     - name: Set up Node
       uses: actions/setup-node@v1
       with:
@@ -41,5 +43,5 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRETACCESSKEY }}
         AWS_S3_ENDPOINT: ${{secrets.ENDPOINT}}
         AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
-        SOURCE_DIR: './'      # optional: defaults to entire repository
+        SOURCE_DIR: './latest'      # optional: defaults to entire repository
         DEST_DIR: 'client_latest'
