@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const latestFile = path.join(__dirname, '../latest.json');
+const latestFile = path.join(__dirname, '../latest/latest.json');
 
 
 fs.readFile(latestFile, 'utf8', (err, data) => {
