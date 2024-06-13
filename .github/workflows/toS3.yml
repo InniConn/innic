@@ -8,7 +8,7 @@ on:
         required: true
         description: 'The version x.x.x of the release'
   release:
-    types: [published]
+    types: [released]
 
 jobs:
   upload:
@@ -45,4 +45,4 @@ jobs:
         AWS_S3_ENDPOINT: ${{secrets.ENDPOINT}}
         AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
         SOURCE_DIR: './latest'      # optional: defaults to entire repository
-        DEST_DIR: 'client_latest'
+        DEST_DIR: ${{ github.event.inputs.tag || github.ref_name }}
